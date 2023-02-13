@@ -19,8 +19,8 @@ body{
 .main-text{
     position: absolute;
     top:100px;
-    text-align: center;
-    width:45%;
+  
+   
     height: fit-content;
 }
 .main-text p{
