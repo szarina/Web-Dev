@@ -3,9 +3,12 @@ const taskInput = document.querySelector('.to-do-input');
 const tasksList = document.querySelector('.to-do-list')
 
 
+//1.Adding a task
 //то событие которые мы хотим отследить +функция которая произойдет после
 //ивент содержит всю информацию о  том что произошло
-form.addEventListener('submit',function(event){
+form.addEventListener('submit',addTask);
+
+function addTask(event){
     //после формы страница авто обновляется и тут я это убираю и также 
     //отменяется отправка формы
     event.preventDefault();
@@ -35,4 +38,21 @@ form.addEventListener('submit',function(event){
     taskInput.value ="" 
     //Focus
     taskInput.focus()
-})
+
+}
+
+
+//2.Deleting the task
+
+tasksList.addEventListener('click',deleteTask);
+
+function deleteTask(event){
+    //data-action="delete"
+    if(event.target.dataset.action=="delete"){
+        //console.log('delete!')
+
+        const parent= event.target.closest('.list-items');
+
+        parent.remove();
+    }
+}

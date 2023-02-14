@@ -91,7 +91,12 @@ form{
 
 .btn-action{
     background-color: white;
+    cursor: pointer;
 }
+.btn-action img {
+    pointer-events: none;
+}
+
 
 .del{
     float: right;
