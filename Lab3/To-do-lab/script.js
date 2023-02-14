@@ -21,8 +21,8 @@ function addTask(event){
     //Adding new list item
     const taskHTML = `<li class="list-items">
     <div class="task">
-    <button type="button" data-action="done" class="btn-action " >
-        <img src="tick.png" alt="Done" width="18" height="18">
+    <button type="button" data-action="done" class="btn-action tick " >
+        <img src="tick.png" alt="Done" width="18" height="18" class="hide">
     </button>
     <span class="text">${taskText}</span>
     <button type="button" data-action="delete" class="btn-action del">
@@ -71,6 +71,11 @@ function completeTask(event){
 
         //will add-remove;можно вернуть 
         taskTitle.classList.toggle('text-completed')
+
+        const tickImage = parent.querySelector('.hide')
+
+        tickImage.classList.toggle('show')
+
 
     }
 
