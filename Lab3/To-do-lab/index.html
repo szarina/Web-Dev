@@ -15,17 +15,37 @@
             <p>ToDo List</p>
         </div>
 
-        <form action="">
+        <form action="" id="form">
             <input type="text" class="to-do-input">
-            <button class="add-task-button">
+            <button class="add-task-button" type="submit">
                 Add
-                <!--<img class="plus" src="plus_icon.png"></i>-->
             </button>
         </form>
 
         <div class="to-do-container">
             <ul class="to-do-list">
-
+                <li class="list-items">
+                    <div class="task">
+                    <button type="button" data-action="done" class="btn-action " >
+                        <img src="tick.png" alt="Done" width="18" height="18">
+                    </button>
+                    <span class="text">Buy Milk</span>
+                    <button type="button" data-action="delete" class="btn-action ">
+                        <img src="delete.png" alt="Done" width="18" height="18">
+                    </button>
+                    </div>
+                </li>
+                <li class="list-items">
+                    <div class="task">
+                    <button type="button" data-action="done" class="btn-action " >
+                        <img src="tick.png" alt="Done" width="18" height="18">
+                    </button>
+                    <span class="text">Buy Milk</span>
+                    <button type="button" data-action="delete" class="btn-action ">
+                        <img src="delete.png" alt="Done" width="18" height="18">
+                    </button>
+                    </div>
+                </li>
             </ul>
         </div>
 

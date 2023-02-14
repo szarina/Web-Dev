@@ -59,7 +59,37 @@ form{
     font-size: 17px;
 
 }
-/*.plus{
-    width: 24px;
-    height: 24px;
-}*/
+
+
+
+.to-do-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list{
+    min-width: 30%;
+    list-style: none;
+    position: absolute;
+    top:280px;
+    left:410px;
+}
+
+.task{
+    width: 700px;
+    padding: 15px;
+    border: 2px solid #d9dddc  ;
+    margin-bottom: 10px;
+
+}
+
+.text{
+    font-size: 20px;
+
+}
+
+.btn-action{
+    background-color: white;
+}
+
