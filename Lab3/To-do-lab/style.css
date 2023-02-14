@@ -25,5 +25,41 @@ body{
 }
 .main-text p{
     color:black;
-    font-size: larger;
+    font-size: 35px;
 }
+
+form{
+    position: absolute;
+    top:200px;
+    left:450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*form input */
+.to-do-input{
+    width: 600px;
+    height: 30px;
+    border-color: #d9dddc;
+    border-radius: 3px;
+
+}
+.add-task-button{
+    border-color:white;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 34px;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1338BE;
+    color: white;
+    font-size: 17px;
+
+}
+/*.plus{
+    width: 24px;
+    height: 24px;
+}*/
