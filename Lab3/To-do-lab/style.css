@@ -81,7 +81,7 @@ form{
     padding: 15px;
     border: 2px solid #d9dddc  ;
     margin-bottom: 10px;
-
+  
 }
 
 .text{
@@ -93,3 +93,6 @@ form{
     background-color: white;
 }
 
+.del{
+    float: right;
+}

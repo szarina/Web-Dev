@@ -13,6 +13,8 @@ form.addEventListener('submit',function(event){
     //text from input
     const taskText = taskInput.value;
 
+    
+   
     //Adding new list item
     const taskHTML = `<li class="list-items">
     <div class="task">
@@ -20,11 +22,17 @@ form.addEventListener('submit',function(event){
         <img src="tick.png" alt="Done" width="18" height="18">
     </button>
     <span class="text">${taskText}</span>
-    <button type="button" data-action="delete" class="btn-action ">
+    <button type="button" data-action="delete" class="btn-action del">
         <img src="delete.png" alt="Done" width="18" height="18">
     </button>
     </div>
     </li>   `
 
-    tasksList.insertAdjacentHTML('beforeend',taskHTML)
+    //Adds new item
+    tasksList.insertAdjacentHTML('beforeend',taskHTML);
+
+    //Clearing prev input
+    taskInput.value ="" 
+    //Focus
+    taskInput.focus()
 })
