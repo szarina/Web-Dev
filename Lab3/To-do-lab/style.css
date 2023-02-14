@@ -19,7 +19,7 @@ body{
 .main-text{
     position: absolute;
     top:100px;
-  
+    left:400px;
    
     height: fit-content;
 }
