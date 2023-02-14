@@ -56,3 +56,22 @@ function deleteTask(event){
         parent.remove();
     }
 }
+
+//3.Completing the task
+
+tasksList.addEventListener('click',completeTask);
+
+function completeTask(event){
+    if(event.target.dataset.action=="done"){
+        //console.log('delete!')
+        //here i find the <li> parent
+        const parent= event.target.closest('.list-items');
+        //here i find <span> text
+        const taskTitle=parent.querySelector('.text')
+
+        //will add-remove;можно вернуть 
+        taskTitle.classList.toggle('text-completed')
+
+    }
+
+}
