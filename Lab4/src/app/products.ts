@@ -3,6 +3,9 @@ export interface Product {
   name: string;
   price: number;
   description: string;
+  img_url: string;
+  url: string;
+  rating: number;
 }
 
 export const products = [
@@ -16,6 +19,7 @@ export const products = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h8a/h03/32773970559006/heimish-all-clean-balm-mnogofunkcionalnyj-dla-lica-120-ml-100341040-1-Container.jpg',
 
     url: 'https://kaspi.kz/shop/p/heimish-all-clean-balm-bal-zam-120-ml-100341040/?c=750000000',
+    rating: 4.89,
   },
   {
     id: 2,
@@ -26,6 +30,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h9b/h4e/51067154464798/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-150-ml-101481415-1.jpg',
     url: 'https://kaspi.kz/shop/p/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-155-ml-101481415/?c=750000000',
+    rating: 4.8,
   },
   {
     id: 3,
@@ -36,6 +41,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/he1/hf2/49838117650462/heimish-all-clean-green-foam-150-ml-100397062-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/heimish-all-clean-green-foam-penka-150-ml-100397062/?c=750000000',
+    rating: 4.79,
   },
 
   {
@@ -46,7 +52,8 @@ export const products = [
       'тип: пенка,объем: 150 мk, тип кожи: для всех типов,страна производства: Корея',
     img_url:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
-    url: 'https://kaspi.kz/shop/p/dr-ceuracle-pro-balance-creamy-cleansing-foam-penka-dlja-litsa-150-ml-100904391/?c=750000000',
+    url: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
+    rating: 4.77,
   },
   {
     id: 5,
@@ -57,6 +64,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h0a/he1/32765916545054/medi-peel-algo-tox-deep-clear-150-ml-100272231-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/medi-peel-algo-tox-deep-clear-penka-150-ml-100272231/?c=750000000',
+    rating: 4.8,
   },
   {
     id: 6,
@@ -67,6 +75,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h24/h84/31800017420318/dr-jart-dermaclear-micro-ph-foam-21900269-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/dr-jart-dermaclear-micro-ph-foam-gel-120-ml-21900269/?c=750000000',
+    rating: 4.79,
   },
   {
     id: 7,
@@ -77,6 +86,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h67/hde/50536185757726/by-wishtrend-green-tea-enzyme-powder-wash-enzimnaa-pudra-110-ml-104744971-1.jpg',
     url: 'https://kaspi.kz/shop/p/by-wishtrend-green-tea-enzyme-powder-wash-enzimnaja-pudra-110-ml-104744971/?c=750000000',
+    rating: 4.85,
   },
   {
     id: 8,
@@ -87,6 +97,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h5e/had/32920034607134/dr-jart-teatreement-cleansing-foam-mousse-nettoyante-100670034-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/dr-jart-ctrl-a-teatreement-cleansing-foam-gel--penka-120-ml-100670034/?c=750000000',
+    rating: 4.78,
   },
   {
     id: 9,
@@ -97,6 +108,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h89/h88/32617832644638/cosrx-low-ph-good-morning-gel-cleanser-150-ml-100375636-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/cosrx-low-ph-good-morning-gel-cleanser-gel--penka-150-ml-100375636/?c=750000000',
+    rating: 4.73,
   },
   {
     id: 10,
@@ -107,6 +119,7 @@ export const products = [
     img_url:
       'https://resources.cdn-kaspi.kz/img/m/p/h09/hb9/64368900014110.jpg?format=preview-medium',
     url: 'https://kaspi.kz/shop/p/sulwhasoo-gentle-cleansing-oil-gidrofil-noe-maslo-50-ml-103287184/?c=750000000',
+    rating: 4.74,
   },
 ];
 

@@ -2,7 +2,10 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
+  <img src="{{ product.img_url }}" class="images" />
+  <h4>{{ product.price }}тг</h4>
   <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+  <p>Рейтинг: {{ product.rating }}</p>
+
+  <button type="button" (click)="addToCart(product)">Купить</button>
 </div>
