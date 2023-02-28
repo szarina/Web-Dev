@@ -1,4 +1,4 @@
-import {Product, products} from "./products";
+import {cleansers, Product, products} from "./products";
 
 export interface Categories {
   id: number;
@@ -8,6 +8,6 @@ export interface Categories {
 }
 export  const categories=[
   {id:1,
-  productList:products,
-  name:"Cleansers"}
+  productList:cleansers,
+  name:"Умывалки"}
 ]

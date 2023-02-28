@@ -301,7 +301,7 @@ export const products = [
 ];
 
  */
-export const products = [
+export const cleansers = [
   {
     id: 1,
     name: 'Heimish All Clean Balm бальзам 120 мл',
@@ -416,10 +416,4 @@ export const products = [
   },
 ];
 
-export const  categories=[
-  {
-    id:1,
-    productList:products
-  }
 
-]

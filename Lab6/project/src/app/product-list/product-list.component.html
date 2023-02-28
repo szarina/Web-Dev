@@ -1,9 +1,10 @@
-<h2>Продукты:</h2>
-<div *ngFor="let product of products">
+<h2>Категории:</h2>
+<div *ngIf="category&&category.productList">
+<div *ngFor="let product of category.productList">
   <h3>
     <a
       [title]="product.name + ' details'"
-      [routerLink]="['/products', product.id]"
+      [routerLink]="['/products', product.id,category.id]"
     >
       {{ product.name }}
     </a>
@@ -14,4 +15,5 @@
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
+</div>
 </div>

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Product, products } from '../products';
+import { Product } from '../products';
 import { CartService } from '../cart.service';
+import {Categories} from "../categories";
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -21,8 +22,10 @@ export class ProductDetailsComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
 
+    const categoryIdFromRoute = Number(routeParams.get('productId'));
     // Find the product that correspond with the id provided in route.
-    this.product = products.find(
+    //fins categorie in categories;then product in categorie.productList
+    this.product = category.productList.find(
       (product) => product.id === productIdFromRoute
     );
   }
