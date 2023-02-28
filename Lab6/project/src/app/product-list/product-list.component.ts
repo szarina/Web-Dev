@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 import { products } from '../products';
 
@@ -8,6 +8,8 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
+  //Input() category ="";
+
   products = products;
 
   onNotify() {

@@ -1,17 +1,6 @@
 <app-top-bar></app-top-bar>
 
+
 <div class="container">
   <router-outlet></router-outlet>
 </div>
-<div *ngFor="let product of products">
-  <h3>
-    <a
-      [title]="product.name + ' details'"
-      [routerLink]="['/products', product.id]"
-    >
-      {{ product.name }}
-    </a>
-  </h3>
-  <img src="{{ product.img_url }}" class="images" />
-  <p *ngIf="product.description">Описание: {{ product.description }}</p>
-  <p *ngIf="product.rating">Рейтинг: {{ product.rating }}</p>
