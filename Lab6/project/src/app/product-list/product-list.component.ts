@@ -1,6 +1,6 @@
-import { Component,Input ,OnInit} from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 
-import {categories, Categories} from "../categories";
+import {categories, Category } from "../categories";
 import {ActivatedRoute} from "@angular/router";
 @Component({
   selector: 'app-product-list',
@@ -9,7 +9,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductListComponent implements OnInit {
   //Input() category ="";
-  category :Categories | undefined;
+  category :Category | undefined;
 
   constructor(
     private route: ActivatedRoute,

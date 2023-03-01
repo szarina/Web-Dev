@@ -1,6 +1,6 @@
-import {cleansers, Product, products} from "./products";
+import {cleansers, Product} from "./products";
 
-export interface Categories {
+export interface Category {
   id: number;
   productList: Product[];
 
