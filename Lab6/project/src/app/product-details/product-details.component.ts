@@ -39,4 +39,7 @@ export class ProductDetailsComponent implements OnInit {
     this.cartService.addToCart(product);
     window.alert('Продукт был добавлен в корзину!!');
   }
+
+
+
 }

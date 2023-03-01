@@ -13,7 +13,10 @@
   <p *ngIf="product.description">Описание: {{ product.description }}</p>
   <p *ngIf="product.rating">Рейтинг: {{ product.rating }}</p>
 
+
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
+
+  <button (click)="removeProduct(product.id)">Remove</button>
 </div>
 </div>
