@@ -1,3 +1,6 @@
 h3{
   margin:30px;
 }
+#categories{
+  display: inline-block;
+}
