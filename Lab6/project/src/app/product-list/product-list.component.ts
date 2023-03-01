@@ -8,7 +8,6 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  //Input() category ="";
   category :Category | undefined;
 
   constructor(

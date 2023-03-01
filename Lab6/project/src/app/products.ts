@@ -7,83 +7,9 @@ export interface Product {
   url: string;
   rating: number;
 }
-/*const cleansers=[
-  {
-    id: 1,
-    name: 'Heimish All Clean Balm бальзам 120 мл',
-    price: 5761,
-    description:
-      'тип: бальзам\n'+
-      'объем: 120 мл\n'+
-      'тип кожи: для всех типов\n'+
-      'страна производства: Корея\n',
-    img_url:
-      'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h8a/h03/32773970559006/heimish-all-clean-balm-mnogofunkcionalnyj-dla-lica-120-ml-100341040-1-Container.jpg',
 
-    url: 'https://kaspi.kz/shop/p/heimish-all-clean-balm-bal-zam-120-ml-100341040/?c=750000000',
-    rating: 4.89,
-  },
-  {
-    id: 2,
-    name: 'Dr.Ceuracle Pro Balance Pure Cleansing гидрофильное масло',
-    price: 6714,
-    description:
-      'тип: гидрофильное масло\n'+
-      'объем: 155 мл\n'+
-      'тип кожи: для всех типов\n'+
-      'страна производства: Корея\n',
-    img_url:
-      'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h9b/h4e/51067154464798/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-150-ml-101481415-1.jpg',
-    url: 'https://kaspi.kz/shop/p/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-155-ml-101481415/?c=750000000',
-    rating: 4.8,
-  },
-  {
-    id: 3,
-    name: 'Heimish All Clean Green Foam пенка 150 мл',
-    price: 3187,
-    description:
-      'тип: пенка\n'+
-      'объем: 150 мл\n'+
-      'тип кожи: для всех типов\n' +
-      'страна производства: Корея\n',
-    img_url:
-      'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/he1/hf2/49838117650462/heimish-all-clean-green-foam-150-ml-100397062-1-Container.jpg',
-    url: 'https://kaspi.kz/shop/p/heimish-all-clean-green-foam-penka-150-ml-100397062/?c=750000000',
-    rating: 4.79,
-  },
 
-  {
-    id: 4,
-    name: 'Dr.Ceuracle Pro Balance Creamy Cleansing Foam пенка для лица',
-    price: 4292,
-    description:
-      'тип: пенка\n'
-       +'объем: 150 мл\n'+
-        'тип кожи: для всех типов\n'+
-         'страна производства: Корея\n',
-    img_url:
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
-    url: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
-    rating: 4.77,
-  },
-  {
-    id: 5,
-    name: 'MEDI-PEEL Algo-Tox Deep Clear пенка 150 мл',
-    price: 4397,
-    description:
-      'тип: пенка\n'+
-      'объем: 150 мл\n'+
-      'тип кожи: для всех типов\n'+
-      'страна производства: Корея\n',
-    img_url:
-      'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h0a/he1/32765916545054/medi-peel-algo-tox-deep-clear-150-ml-100272231-1-Container.jpg',
-    url: 'https://kaspi.kz/shop/p/medi-peel-algo-tox-deep-clear-penka-150-ml-100272231/?c=750000000',
-    rating: 4.8,
-  },
-
-]
-
-const creams=[
+export const creams: Product[] =[
   {
     id: 1,
     name: 'Dr.Ceuracle Pro Balance Biotics Moisturizer крем 100 мл',
@@ -170,137 +96,174 @@ const creams=[
 ]
 
 
-const serums=[
+export const serums=[
   {
-    id: ,
-    name: '',
-    price: ,
+    id: 1,
+    name: 'The Ordinary Niacinamide 10%+Zinc 1% сыворотка 30 мл',
+    price: 4723 ,
     description:
-      '',
+      'тип: сыворотка\n' +
+      'действие: матирование, ,противовоспалительное, ,выравнивание, ,регенерация\n' +
+      'область нанесения: для лица\n' +
+      'тип кожи: проблемная\n' +
+      'страна производства: Канада',
     img_url:
-      '',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h63/h05/33287281410078/the-ordinary-niacinamide-10-zinc-1-syvorotka-30-ml-100703687-1.jpg',
 
-    url: '',
-    rating: ,
+    url: 'https://kaspi.kz/shop/p/the-ordinary-niacinamide-10-zinc-1-syvorotka-30-ml-100703687/?c=750000000',
+    rating: 5.5,
   },
   {
-    id: ,
-    name: '',
-    price: ,
+    id: 2,
+    name: 'MEDI-PEEL Luxury 24K Gold Ampoule сыворотка 100 мл',
+    price: 4349,
     description:
-      '',
+      'тип: сыворотка\n' +
+      'действие: питание, ,увлажнение, ,повышение упругости\n' +
+      'область нанесения: для лица\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
     img_url:
-      '',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/he8/hc4/49884106522654/medi-peel-luxury-24k-gold-ampoule-syvorotka-100-ml-100375778-1.jpg',
 
-    url: '',
-    rating: ,
+    url: 'https://kaspi.kz/shop/p/medi-peel-luxury-24k-gold-ampoule-syvorotka-100-ml-100375778/?c=750000000',
+    rating: 4.5,
   },
   {
-    id: ,
-    name: '',
-    price: ,
+    id:3 ,
+    name: 'Cos De BAHA RS Retinol 2.5 Serum сыворотка 30 ml',
+    price: 4000,
     description:
-      '',
+      'тип: сыворотка\n' +
+      'действие: разглаживание, ,противовоспалительное, ,выравнивание, ,тонизирование\n' +
+      'область нанесения: для лица\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
     img_url:
-      '',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h1c/hcc/52052688502814/cos-de-baha-rs-retinol-2-5-serum-30-ml-101844504-1-Container.jpg',
 
-    url: '',
-    rating: ,
+    url: 'https://kaspi.kz/shop/p/cos-de-baha-rs-retinol-2-5-serum-syvorotka-30-ml-101844504/?c=750000000',
+    rating: 4.5,
   },
   {
-    id: ,
-    name: '',
-    price: ,
+    id: 3,
+    name: 'Cos De BAHA сыворотка Vitamin C 15% для лица 30 мл',
+    price: 3847,
     description:
-      '',
+      'тип: сыворотка\n' +
+      'действие: сияние, ,выравнивание, ,регенерация\n' +
+      'область нанесения: для лица\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
     img_url:
-      '',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h1c/hcc/52052688502814/cos-de-baha-rs-retinol-2-5-serum-30-ml-101844504-1-Container.jpg',
 
-    url: '',
-    rating: ,
+    url: 'https://kaspi.kz/shop/p/cos-de-baha-rs-retinol-2-5-serum-syvorotka-30-ml-101844504/?c=750000000',
+    rating: 4.5 ,
   },
   {
-    id: ,
-    name: '',
-    price: ,
+    id:5 ,
+    name: 'The Ordinary Retinol 0.5% in Squalane сыворотка 30 мл',
+    price:6447 ,
     description:
-      '',
+      'тип: сыворотка\n' +
+      'действие: разглаживание, ,выравнивание\n' +
+      'область нанесения: для лица\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
     img_url:
-      '',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5d/had/32844452921374/the-ordinary-retinol-0-5-in-squalane-30-ml-100999150-1-Container.jpg',
 
-    url: '',
-    rating: ,
+    url: 'https://kaspi.kz/shop/p/the-ordinary-retinol-0-5-in-squalane-syvorotka-30-ml-100999150/?c=750000000#!/item',
+    rating: 4.5,
+  },
+]
+
+
+export const patches=[
+  {
+    id: 1,
+    name: 'MEDI-PEEL гидрогелевые Hyaluron Cica Peptide 9 для глаз',
+    price: 4903,
+    description:
+      'вид патчей: гидрогелевые\n' +
+      'зона нанесения: для глаз\n' +
+      'действие: повышение упругости, ,лифтинг, ,освежающий\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
+    img_url:
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h60/h55/61703205781534/medi-peel-hyaluron-dark-benone-peptide-9-ampoule-eye-patch-60-st-100378906-1-Container.jpg',
+
+    url: 'https://kaspi.kz/shop/p/medi-peel-gidrogelevye-hyaluron-dark-benone-peptide-9-dlja-glaz-60-sht-100378906/?c=750000000',
+    rating:4.5 ,
+  },
+  {
+    id: 2,
+    name: 'Патчи Bioaqua гидрогелевые с экстрактом золота для глаз 60 шт',
+    price: 2600 ,
+    description:
+      'вид патчей: гидрогелевые\n' +
+      'зона нанесения: для глаз\n' +
+      'действие: увлажнение, ,осветление, ,освежающий, ,от отеков\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Китай',
+    img_url:
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h89/h13/51069195911198/bioaqua-patci-s-ekstraktom-zolota-60-ml-102211025-1-Container.jpg',
+
+    url: 'https://kaspi.kz/shop/p/bioaqua-gidrogelevye-s-ekstraktom-zolota-dlja-glaz-60-sht-102211025/?c=750000000',
+    rating:4.5 ,
+  },
+  {
+    id:3 ,
+    name: 'Патчи MEDI-PEEL гидрогелевые Hyaluron Rose Peptide 9 для глаз 60 шт',
+    price:4394 ,
+    description:
+      'вид патчей: гидрогелевые\n' +
+      'зона нанесения: для глаз\n' +
+      'действие: питание, ,повышение упругости, ,увлажнение, ,освежающий\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
+    img_url:
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h4d/hac/49949314580510/medi-peel-hyaluron-rose-peptide-9-ampoule-eye-patch-100371520-1-Container.jpg',
+
+    url: 'https://kaspi.kz/shop/p/medi-peel-gidrogelevye-hyaluron-rose-peptide-9-dlja-glaz-60-sht-100371520/?c=750000000',
+    rating:4.5 ,
+  },
+  {
+    id:4 ,
+    name: 'Патчи Images гидрогелевые Golden Seaweet Moisturizing для глаз 60 шт',
+    price:2700 ,
+    description:
+      'вид патчей: гидрогелевые\n' +
+      'зона нанесения: для глаз\n' +
+      'действие: питание, ,увлажнение, ,восстановление, ,от отеков, ,от темных кругов\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Китай',
+    img_url:
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hac/h74/63052026642462/golden-seaweet-moisturizing-105322733-1.jpg',
+
+    url: 'https://kaspi.kz/shop/p/images-gidrogelevye-golden-seaweet-moisturizing-dlja-glaz-60-sht-105322733/?c=750000000',
+    rating:4.5 ,
+  },
+  {
+    id: 5,
+    name: 'Патчи Farmstay гидрогелевые Vitamin для глаз 60 шт',
+    price:3420,
+    description:
+      'вид патчей: гидрогелевые\n' +
+      'зона нанесения: для глаз\n' +
+      'действие: увлажнение, ,сияние\n' +
+      'тип кожи: для всех типов\n' +
+      'страна производства: Корея',
+    img_url:
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc4/hc7/32215723802654/farm-stay-vitamin-hydrogel-eye-patch-60-st-19600504-1-Container.jpg',
+
+    url: 'https://kaspi.kz/shop/p/farmstay-gidrogelevye-vitamin-dlja-glaz-60-sht-19600504/?c=750000000',
+    rating:4.5 ,
   },
 ]
 
 
-const serums=[
-  {
-    id: ,
-    name: '',
-    price: ,
-    description:
-      '',
-    img_url:
-      '',
-
-    url: '',
-    rating: ,
-  },
-  {
-    id: ,
-    name: '',
-    price: ,
-    description:
-      '',
-    img_url:
-      '',
-
-    url: '',
-    rating: ,
-  },
-  {
-    id: ,
-    name: '',
-    price: ,
-    description:
-      '',
-    img_url:
-      '',
-
-    url: '',
-    rating: ,
-  },
-  {
-    id: ,
-    name: '',
-    price: ,
-    description:
-      '',
-    img_url:
-      '',
-
-    url: '',
-    rating: ,
-  },
-  {
-    id: ,
-    name: '',
-    price: ,
-    description:
-      '',
-    img_url:
-      '',
-
-    url: '',
-    rating: ,
-  },
-]
-export const products = [
-  cleansers
-];
-
- */
 export const cleansers = [
   {
     id: 1,
