@@ -6,6 +6,7 @@ export interface Product {
   img_url: string;
   url: string;
   rating: number;
+  likes:number;
 }
 
 
@@ -25,6 +26,7 @@ export const creams: Product[] =[
 
     url: 'https://kaspi.kz/shop/p/dr-ceuracle-pro-balance-biotics-moisturizer-krem-100-ml-100675870/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
   {
     id: 2,
@@ -41,13 +43,14 @@ export const creams: Product[] =[
 
     url: 'https://kaspi.kz/shop/p/a-pieu-madecassoside-krem-50-ml-100396850/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
   {
     id: 3,
     name: 'MEDI-PEEL крем Volume Tox Peptide 9 для лица 50 мл',
     price: 5860,
     description:
-     'тип: крем\n' +
+      'тип: крем\n' +
       'действие: увлажнение, ,регенерация, ,повышение упругости\n' +
       'область нанесения: для лица\n' +
       'тип кожи: проблемная\n' +
@@ -57,6 +60,7 @@ export const creams: Product[] =[
 
     url: 'https://kaspi.kz/shop/p/medi-peel-krem-volume-tox-peptide-9-dlja-litsa-50-ml-100106918/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
   {
     id: 4,
@@ -69,9 +73,10 @@ export const creams: Product[] =[
       'тип кожи: для всех типов\n' +
       'страна производства: Франция',
     img_url:
-    'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h75/h3b/50968279318558/la-roche-posay-effaclar-duo-40-ml-101855566-1-Container.jpg',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h75/h3b/50968279318558/la-roche-posay-effaclar-duo-40-ml-101855566-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/la-roche-posay-effaclar-duo-krem-dlja-litsa-40-ml-101855566/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
 
   {
@@ -89,6 +94,7 @@ export const creams: Product[] =[
 
     url: 'https://kaspi.kz/shop/p/enough-krem-collagen-moisture-essential-dlja-litsa-dlja-shei-50-ml-101095567/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
 
 
@@ -112,6 +118,7 @@ export const serums=[
 
     url: 'https://kaspi.kz/shop/p/the-ordinary-niacinamide-10-zinc-1-syvorotka-30-ml-100703687/?c=750000000',
     rating: 5.5,
+    likes: 0,
   },
   {
     id: 2,
@@ -128,6 +135,7 @@ export const serums=[
 
     url: 'https://kaspi.kz/shop/p/medi-peel-luxury-24k-gold-ampoule-syvorotka-100-ml-100375778/?c=750000000',
     rating: 4.5,
+    likes: 0,
   },
   {
     id:3 ,
@@ -144,6 +152,7 @@ export const serums=[
 
     url: 'https://kaspi.kz/shop/p/cos-de-baha-rs-retinol-2-5-serum-syvorotka-30-ml-101844504/?c=750000000',
     rating: 4.5,
+    likes: 0,
   },
   {
     id: 3,
@@ -160,6 +169,7 @@ export const serums=[
 
     url: 'https://kaspi.kz/shop/p/cos-de-baha-rs-retinol-2-5-serum-syvorotka-30-ml-101844504/?c=750000000',
     rating: 4.5 ,
+    likes:0,
   },
   {
     id:5 ,
@@ -176,6 +186,7 @@ export const serums=[
 
     url: 'https://kaspi.kz/shop/p/the-ordinary-retinol-0-5-in-squalane-syvorotka-30-ml-100999150/?c=750000000#!/item',
     rating: 4.5,
+    likes: 0,
   },
 ]
 
@@ -196,6 +207,7 @@ export const patches=[
 
     url: 'https://kaspi.kz/shop/p/medi-peel-gidrogelevye-hyaluron-dark-benone-peptide-9-dlja-glaz-60-sht-100378906/?c=750000000',
     rating:4.5 ,
+    likes: 0,
   },
   {
     id: 2,
@@ -212,6 +224,7 @@ export const patches=[
 
     url: 'https://kaspi.kz/shop/p/bioaqua-gidrogelevye-s-ekstraktom-zolota-dlja-glaz-60-sht-102211025/?c=750000000',
     rating:4.5 ,
+    likes: 0,
   },
   {
     id:3 ,
@@ -228,6 +241,7 @@ export const patches=[
 
     url: 'https://kaspi.kz/shop/p/medi-peel-gidrogelevye-hyaluron-rose-peptide-9-dlja-glaz-60-sht-100371520/?c=750000000',
     rating:4.5 ,
+    likes: 0,
   },
   {
     id:4 ,
@@ -244,6 +258,7 @@ export const patches=[
 
     url: 'https://kaspi.kz/shop/p/images-gidrogelevye-golden-seaweet-moisturizing-dlja-glaz-60-sht-105322733/?c=750000000',
     rating:4.5 ,
+    likes: 0,
   },
   {
     id: 5,
@@ -260,6 +275,7 @@ export const patches=[
 
     url: 'https://kaspi.kz/shop/p/farmstay-gidrogelevye-vitamin-dlja-glaz-60-sht-19600504/?c=750000000',
     rating:4.5 ,
+    likes: 0,
   },
 ]
 
@@ -276,6 +292,7 @@ export const cleansers = [
 
     url: 'https://kaspi.kz/shop/p/heimish-all-clean-balm-bal-zam-120-ml-100341040/?c=750000000',
     rating: 4.89,
+    likes: 0,
   },
   {
     id: 2,
@@ -287,6 +304,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h9b/h4e/51067154464798/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-150-ml-101481415-1.jpg',
     url: 'https://kaspi.kz/shop/p/dr-ceuracle-pro-balance-pure-cleansing-gidrofil-noe-maslo-155-ml-101481415/?c=750000000',
     rating: 4.8,
+    likes: 0,
   },
   {
     id: 3,
@@ -298,6 +316,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/he1/hf2/49838117650462/heimish-all-clean-green-foam-150-ml-100397062-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/heimish-all-clean-green-foam-penka-150-ml-100397062/?c=750000000',
     rating: 4.79,
+    likes:0,
   },
 
   {
@@ -310,6 +329,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
     url: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf3/h27/33085968613406/dr-ceuracle-pro-balance-creamy-cleansing-foam-150-ml-100904391-1-Container.jpg',
     rating: 4.77,
+    likes: 0,
   },
   {
     id: 5,
@@ -321,6 +341,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h0a/he1/32765916545054/medi-peel-algo-tox-deep-clear-150-ml-100272231-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/medi-peel-algo-tox-deep-clear-penka-150-ml-100272231/?c=750000000',
     rating: 4.8,
+    likes:0,
   },
   {
     id: 6,
@@ -332,6 +353,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h24/h84/31800017420318/dr-jart-dermaclear-micro-ph-foam-21900269-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/dr-jart-dermaclear-micro-ph-foam-gel-120-ml-21900269/?c=750000000',
     rating: 4.79,
+    likes: 0,
   },
   {
     id: 7,
@@ -343,6 +365,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h67/hde/50536185757726/by-wishtrend-green-tea-enzyme-powder-wash-enzimnaa-pudra-110-ml-104744971-1.jpg',
     url: 'https://kaspi.kz/shop/p/by-wishtrend-green-tea-enzyme-powder-wash-enzimnaja-pudra-110-ml-104744971/?c=750000000',
     rating: 4.85,
+    likes:0,
   },
   {
     id: 8,
@@ -354,6 +377,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h5e/had/32920034607134/dr-jart-teatreement-cleansing-foam-mousse-nettoyante-100670034-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/dr-jart-ctrl-a-teatreement-cleansing-foam-gel--penka-120-ml-100670034/?c=750000000',
     rating: 4.78,
+    likes: 0,
   },
   {
     id: 9,
@@ -365,6 +389,7 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h89/h88/32617832644638/cosrx-low-ph-good-morning-gel-cleanser-150-ml-100375636-1-Container.jpg',
     url: 'https://kaspi.kz/shop/p/cosrx-low-ph-good-morning-gel-cleanser-gel--penka-150-ml-100375636/?c=750000000',
     rating: 4.73,
+    likes: 0,
   },
   {
     id: 10,
@@ -376,8 +401,12 @@ export const cleansers = [
       'https://resources.cdn-kaspi.kz/img/m/p/h09/hb9/64368900014110.jpg?format=preview-medium',
     url: 'https://kaspi.kz/shop/p/sulwhasoo-gentle-cleansing-oil-gidrofil-noe-maslo-50-ml-103287184/?c=750000000',
     rating: 4.74,
+    likes: 0,
   },
 ];
+
+
+
 
 /*
 export const creams: Product[] =[

@@ -1,18 +1,16 @@
 import { Component,OnInit} from '@angular/core';
-
+import  {Product} from "../products";
 import {categories, Category } from "../categories";
-import {Product } from "../products";
 import {ActivatedRoute} from "@angular/router";
-import {ProductDetailsComponent} from "../product-details/product-details.component";
-import {filter, find} from "rxjs";
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  category: Category | undefined;
 
+  category:Category | undefined;
   constructor(
     private route: ActivatedRoute,
   ) {
@@ -47,6 +45,22 @@ export class ProductListComponent implements OnInit {
           return el.id != id;
         });
       }
+    }
+
+  }
+
+  like(id:number) {
+    let categoryId: number | undefined = this.category?.id;
+    for (let x of categories) {
+      if (x.id == categoryId) {
+        for(let p of x.productList){
+            if(p.id==id){
+              // @ts-ignore
+              p.likes= 1 + p.likes;
+            }
+        }
+      }
+
     }
 
   }

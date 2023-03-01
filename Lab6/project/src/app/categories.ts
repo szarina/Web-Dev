@@ -2,6 +2,7 @@ import {cleansers, creams,serums,patches, Product} from "./products";
 
 export interface Category {
   id: number;
+
   productList: Product[];
 
   name:String;
