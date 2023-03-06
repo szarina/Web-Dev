@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Album} from "../Album";
+import {AlbumsService} from "../albums.service";
 
 @Component({
   selector: 'app-albums',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent {
+  albums:Album[];
+  loaded:boolean;
+
+  constructor(private albumsService:AlbumsService) {
+    this.albums=[];
+    this.loaded=true;
+  }
+
+  ngOnInit():void{
+
+  }
 
 }
