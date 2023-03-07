@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import {Album} from "../Album";
 import {AlbumsService} from "../albums.service";
 
@@ -17,7 +17,14 @@ export class AlbumsComponent {
   }
 
   ngOnInit():void{
-
+  this.getAlbums()
   }
 
+  getAlbums(){
+    this.loaded = false;
+    this.albumsService.getAlbums().subscribe((albums)=>{
+      this.albums = albums;
+      this.loaded  = true;
+    })
+  }
 }
