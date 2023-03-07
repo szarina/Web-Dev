@@ -21,6 +21,6 @@ export class AlbumsService {
   }
 
   getAlbumPhotos(id:number):Observable<Photo[]>{
-    return  this.client.get<Photo[]>( `${this.BASE_URL}/albums/photos`)
+    return  this.client.get<Photo[]>( `${this.BASE_URL}/albums/${id}/photos`)
   }
 }
