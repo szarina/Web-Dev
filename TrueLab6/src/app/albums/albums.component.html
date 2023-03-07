@@ -1,6 +1,9 @@
 <div *ngIf="loaded">
 
 <ul *ngFor="let album of albums">
-  <li>{{album.title}}</li>
+  <li>
+  <a routerLink="/albums/{{album.id}}">
+    {{album.title}}
+  </a></li>
 </ul>
 </div>
