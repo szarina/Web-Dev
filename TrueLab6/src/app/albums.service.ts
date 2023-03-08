@@ -33,6 +33,10 @@ export class AlbumsService {
     return  this.client.delete<Album>(`${this.BASE_URL}/albums/${id}`)
   }
 
+  updateAlbum(id:number,newTitle:string){
+    return this.client.put<Album>(`${this.BASE_URL}/albums/${id}`,{id:id,title:newTitle})
+  }
+
  // updateAlbum(id:number): Observable<Album>{
  //    return  this.client.put<Album>(`${this.BASE_URL}/albums/${id}`)
  //  }
