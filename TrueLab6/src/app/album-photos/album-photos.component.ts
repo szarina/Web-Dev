@@ -15,11 +15,15 @@ export class AlbumPhotosComponent {
 
   height:number;
 
+
+  albumsId:number;
   constructor(private albumsService: AlbumsService, private route: ActivatedRoute) {
     this.photos = [] as Photo[];
     this.loaded = true;
     this.width = 600;
     this.height= 600;
+    this.albumsId=0;
+
   }
 
   ngOnInit(): void {
@@ -31,6 +35,7 @@ export class AlbumPhotosComponent {
     console.log(this.route.paramMap)
     this.route.paramMap.subscribe((params) => {
       const id = Number(params.get('id'));
+      this.albumsId = id;
       this.loaded = false;
       this.albumsService.getAlbumPhotos(id).subscribe((photos) => {
         this.photos = photos;
