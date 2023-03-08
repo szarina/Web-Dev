@@ -11,10 +11,15 @@ import {ActivatedRoute} from "@angular/router";
 export class AlbumPhotosComponent {
   photos: Photo[];
   loaded: boolean;
+  width:number;
+
+  height:number;
 
   constructor(private albumsService: AlbumsService, private route: ActivatedRoute) {
     this.photos = [] as Photo[];
     this.loaded = true;
+    this.width = 600;
+    this.height= 600;
   }
 
   ngOnInit(): void {

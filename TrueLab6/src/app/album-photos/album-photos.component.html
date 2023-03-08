@@ -1,7 +1,9 @@
+<input type="number"  [(ngModel)]="width">
+<input type="number"  [(ngModel)]="height">
 <div *ngIf="loaded">
   <ul *ngFor="let photo of photos" >
     <li>
-      <img src="{{photo.url}}">
+      <img src="{{photo.url}}" width="{{width}}" height="{{height}}">
 
     </li>
   </ul>

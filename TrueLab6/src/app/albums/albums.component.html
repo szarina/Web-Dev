@@ -1,9 +1,15 @@
 <div *ngIf="loaded">
 
-<ul *ngFor="let album of albums">
-  <li>
-  <a routerLink="/albums/{{album.id}}">
+  <input type="text" placeholder="Title"  [(ngModel)]="newAlbum.title">
+  <button (click)="addAlbum()">Add album</button>
+
+
+  <ul *ngFor="let album of albums">
+    <li>
+      <a routerLink="/albums/{{album.id}}">
     {{album.title}}
-  </a></li>
-</ul>
+      </a>
+      <button (click)="deleteAlbum(album.id)">Delete</button>
+    </li>
+  </ul>
 </div>

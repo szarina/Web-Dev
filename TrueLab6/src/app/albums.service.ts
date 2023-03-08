@@ -23,4 +23,17 @@ export class AlbumsService {
   getAlbumPhotos(id:number):Observable<Photo[]>{
     return  this.client.get<Photo[]>( `${this.BASE_URL}/albums/${id}/photos`)
   }
+
+
+  addAlbum(album : Album) : Observable<Album>{
+    return  this.client.post<Album>(`${this.BASE_URL}/albums`,album)
+  }
+
+  deleteAlbum(id:number): Observable<Album>{
+    return  this.client.delete<Album>(`${this.BASE_URL}/albums/${id}`)
+  }
+
+ // updateAlbum(id:number): Observable<Album>{
+ //    return  this.client.put<Album>(`${this.BASE_URL}/albums/${id}`)
+ //  }
 }
