@@ -46,5 +46,5 @@ def end_other(a, b):
 
 # Xyz there
 
-def xyz_there(scdtr):
+def xyz_there(str):
     return str.count('.xyz') != str.count('xyz')
