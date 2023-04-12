@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from Lab9.hh_back.api.models import Company, Vacancy
+from .models import Company, Vacancy
 
-
+# from .import models
 # Register your models here.
 @admin.register(Company)
 class CompanyAdmin(admin.ModelAdmin):

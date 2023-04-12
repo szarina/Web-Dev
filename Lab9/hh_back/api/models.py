@@ -7,6 +7,10 @@ class Company(models.Model):
     city = models.CharField(max_length=255)
     address = models.TextField()
 
+    class Meta:
+        verbose_name="company"
+        verbose_name_plural="companies"
+
     def __str__(self):
         return f'{self.name},address:{self.address}'
 
@@ -25,6 +29,9 @@ class Vacancy(models.Model):
     salary = models.FloatField()
     company = models.ForeignKey(Company, on_delete=models.CASCADE, blank=True)
 
+    class Meta:
+        verbose_name = "vacancy"
+        verbose_name_plural = "vacancies"
     def __str__(self):
         return f'{self.name}:{self.company}'
 
