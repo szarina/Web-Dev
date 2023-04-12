@@ -4,7 +4,8 @@ import {Observable} from "rxjs";
 import {Album} from "./Album";
 import {Photo} from "./Photo";
 
-@Injectable({
+@Injectable
+({
   providedIn: 'root'
 })
 export class AlbumsService {
