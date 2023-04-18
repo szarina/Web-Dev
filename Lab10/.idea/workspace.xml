@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="681cb5c4-03a0-4aa1-a03e-9769c9df382e" name="Changes" comment="" />
+    <list default="true" id="2e5effc4-a72b-4b15-836a-5be7195aaa09" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NKM5YACJIMaSZNpIFJq1YAd4kV" />
+  <component name="ProjectId" id="2Obf6ajd0FuDbyrKXlhjObVHX1x" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,33 +24,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Documents/Web-Dev/Lab10",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\Documents\\Web-Dev\\Lab10\\hh_front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documents\Web-Dev\Lab10" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="681cb5c4-03a0-4aa1-a03e-9769c9df382e" name="Changes" comment="" />
-      <created>1679408138447</created>
+      <changelist id="2e5effc4-a72b-4b15-836a-5be7195aaa09" name="Changes" comment="" />
+      <created>1681834027773</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679408138447</updated>
-      <workItem from="1680337887006" duration="597000" />
-      <workItem from="1680439955237" duration="31000" />
-      <workItem from="1680592508883" duration="228000" />
-      <workItem from="1680685509182" duration="671000" />
-      <workItem from="1680687423838" duration="63000" />
-      <workItem from="1681833983290" duration="44000" />
+      <updated>1681834027773</updated>
+      <workItem from="1681834028878" duration="611000" />
     </task>
     <servers />
   </component>
